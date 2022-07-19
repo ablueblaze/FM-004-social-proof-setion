@@ -1,18 +1,21 @@
 :root {
   --ff-primary: 'League Spartan', sans-serif;
-  --ff-secondary: ;
 
-  --fw-reg: ;
-  --fw-bold: ;
+  --fw-reg: 400;
+  --fw-bold: 500;
+  --fw-bolder: 700;
 
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
-  --fs-body: 1rem;
+  --fs-h1: 2.5em;
+  --fs-p: 1.25em;
+  --fs-body: 15px;
 
-  --clr-dark: #303030;
-  --clr-light: #fff;
-  --clr-accent: ;
+  --set-radius: 10px;
+
+  --clr-magenta-500: hsl(300, 43%, 22%);
+  --clr-magenta-200: hsl(303, 10%, 53%);
+  --clr-magenta-050: hsl(300, 24%, 96%);
+  --clr-pink-300: hsl(333, 80%, 67%);
+  --clr-white: hsl(0, 0%, 100%);
 }
 
 *,
@@ -33,11 +36,111 @@ ol {
   margin: 0;
 }
 
+body {
+  min-height: 100vh;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  background-image: url(./images/bg-pattern-bottom-mobile.svg);
+  /* todo: figure out how this image is supposed to fit */
+  object-fit: fill;
+  margin: 1.5em;
+}
+
+section {
+  margin: 3em auto;
+}
+
 /*  
 ############
-Separator Template
+Header
 ############
 */
+
+.header {
+  color: var(--clr-magenta-200);
+  text-align: center;
+}
+
+.header h1 {
+  font-size: var(--fs-h1);
+  color: var(--clr-magenta-500);
+  margin-bottom: .5em;
+}
+
+.header p {
+  font-size: var(--fs-p);
+}
+
+/*  
+############
+Ratings
+############
+*/
+
+.rating-container {
+  background-color: var(--clr-magenta-050);
+  margin-bottom: 1em;
+  text-align: center;
+  padding: .5em 0;
+  border-radius: var(--set-radius);
+}
+
+/* todo margin-bottom 0 on last .rating-container */
+
+.stars {
+  padding: .5em 0;
+}
+
+.stars img {
+  padding: 0 .1em;
+}
+
+.rating-container p {
+  color: var(--clr-magenta-500);
+  font-weight: var(--fw-bolder);
+  padding: .5em 0;
+}
+
+
+/*  
+############
+Raves
+############
+*/
+
+.rave {
+  background-color: var(--clr-magenta-500);
+  border-radius: var(--set-radius);
+  color: var(--clr-white);
+  font-weight: var(--fw-bold);
+  line-height: 1.5em;
+  padding: 2em;
+  margin-bottom: 1em;
+  font-weight: var(--fw-bolder);
+}
+
+.profile-head {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.profile-head img {
+  width: 3em;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+
+
+.rave span {
+  display: block;
+  color: var(--clr-pink-300);
+}
+
+
+.rave .title {
+  color: var(--clr-pink-300);
+}
 
 /*  
 ############
@@ -45,6 +148,7 @@ Footer
 ############
 */
 
+/* todo: Fix to bottom */
 .attribution {
   font-size: 11px;
   text-align: center;

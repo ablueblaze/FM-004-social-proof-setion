@@ -30,10 +30,10 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 ### Current/Continued Development
 
 - Where in the project am I? 
-  Setting up the basics to work with
+  Setting up the desktop styling
 
 - What is the next thing being developed?
-  Style mobile
+  Transition to desktop
 
 
 - What would I like to do to improve the project in the future?
