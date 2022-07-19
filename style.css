@@ -52,6 +52,15 @@ section {
   margin: 3em auto;
 }
 
+/* todo: At 450px make the expanstion stop, then have it switch layouts at 650px */
+/* todo: Tinker with this */
+
+@media (min-width: 400px) {
+  section {
+    max-width: 400px;
+  }
+}
+
 @media (min-width: 600px) {
   body {
     display: grid;
