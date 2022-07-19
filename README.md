@@ -34,6 +34,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 - What is the next thing being developed?
   Transition to desktop
+  Setup the grid layout of all three areas
 
 
 - What would I like to do to improve the project in the future?

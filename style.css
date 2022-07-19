@@ -36,6 +36,8 @@ ol {
   margin: 0;
 }
 
+
+
 body {
   min-height: 100vh;
   font-family: var(--ff-primary);
@@ -48,6 +50,44 @@ body {
 
 section {
   margin: 3em auto;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "head-1 head-2"
+    "footer footer"
+  }
+
+  .header {
+    grid-area: head-1;
+  }
+
+  .ratings {
+    grid-area: head-2;
+  }
+
+  /* todo: Figure out how this will be set up in grid */
+  .raves {
+    display: grid;
+    grid-template-columns: repeat(8 1fr);
+    grid-area: footer;
+  }
+
+  .rave.grid-1 {
+    grid-column-start: 1;
+  }
+
+  .rave.grid-2 {
+    grid-row-start: 3;
+  }
+
+  .rave.grid-3 {
+    grid-row-start: 5;
+  }
 }
 
 /*  
