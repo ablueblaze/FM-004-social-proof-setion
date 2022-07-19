@@ -33,7 +33,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   Setting up the basics to work with
 
 - What is the next thing being developed?
-  The HTML
+  Style mobile
 
 
 - What would I like to do to improve the project in the future?
