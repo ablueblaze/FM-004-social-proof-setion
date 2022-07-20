@@ -29,16 +29,10 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Current/Continued Development
 
-- Where in the project am I? 
-  Setting up the desktop styling
-
-- What is the next thing being developed?
-  Transition to desktop
-  Setup the grid layout of all three areas
-
-
 - What would I like to do to improve the project in the future?
-  TBA
+  - Do a better job of utilizing css grid.
+  - Definitely implement Grid for the staggering design.
+    The staggard design is currently done with margins.
 
 ---
 
@@ -59,11 +53,16 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 ### Built With
 
 - Included technologies:
-
+  - HTML, CSS, Javascript (just a little)
+  - Flex box
+  - Grid
 
 ### What I Learned
 
-- TBA
+- That CSS-Grid is super cool, and I need to spend some time getting better aquatinted with it.
+- That checking the transition in all sizes it imperative if you want the project to have a good level of polish. 
+
+--- 
 
 ## Author
 

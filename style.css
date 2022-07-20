@@ -9,6 +9,9 @@
   --fs-p: 1.25em;
   --fs-body: 15px;
 
+  --fs-h1-big: 3.5em;
+  --fs-p-big: 1.75em;
+
   --set-radius: 10px;
 
   --clr-magenta-500: hsl(300, 43%, 22%);
@@ -45,26 +48,22 @@ body {
   background-image: url(./images/bg-pattern-bottom-mobile.svg);
   /* todo: figure out how this image is supposed to fit */
   object-fit: fill;
+  background-repeat: no-repeat;
   margin: 1.5em;
 }
 
 section {
+  max-width: 400px;
   margin: 3em auto;
 }
 
-/* todo: At 450px make the expanstion stop, then have it switch layouts at 650px */
-/* todo: Tinker with this */
-
-@media (min-width: 400px) {
-  section {
-    max-width: 400px;
-  }
-}
-
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   body {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-image: url(./images/bg-pattern-top-desktop.svg);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "head-1 head-2"
@@ -79,24 +78,13 @@ section {
     grid-area: head-2;
   }
 
-  /* todo: Figure out how this will be set up in grid */
-  .raves {
-    display: grid;
-    grid-template-columns: repeat(8 1fr);
-    grid-area: footer;
+
+  section {
+    max-width: none;
+    margin: 2em;
   }
 
-  .rave.grid-1 {
-    grid-column-start: 1;
-  }
 
-  .rave.grid-2 {
-    grid-row-start: 3;
-  }
-
-  .rave.grid-3 {
-    grid-row-start: 5;
-  }
 }
 
 /*  
@@ -120,6 +108,23 @@ Header
   font-size: var(--fs-p);
 }
 
+@media (min-width: 800px) {
+  .header {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .header h1 {
+    font-size: var(--fs-h1-big);
+  }
+
+  .header p {
+    font-size: var(--fs-p-big);
+  }
+}
+
 /*  
 ############
 Ratings
@@ -134,8 +139,6 @@ Ratings
   border-radius: var(--set-radius);
 }
 
-/* todo margin-bottom 0 on last .rating-container */
-
 .stars {
   padding: .5em 0;
 }
@@ -148,6 +151,34 @@ Ratings
   color: var(--clr-magenta-500);
   font-weight: var(--fw-bolder);
   padding: .5em 0;
+}
+
+@media (min-width: 800px) {
+  .ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rating-container {
+    display: flex;
+    max-width: 450px;
+    min-width: max-content;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 .5em;
+    font-size: var(--fs-p);
+  }
+
+  .rating-container:nth-child(1) {
+    margin-right: 4em;
+  }
+  .rating-container:nth-child(2) {
+    margin: 0 2em 1em;
+  }
+  .rating-container:nth-child(3) {
+    margin-left: 4em;
+  }
 }
 
 
@@ -189,6 +220,33 @@ Raves
 
 .rave .title {
   color: var(--clr-pink-300);
+}
+
+@media (min-width: 800px) {
+  .raves {
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    grid-area: footer;
+    max-width: 100%;
+  }
+
+  .rave .name {
+    font-size: var(--fs-p);
+  }
+
+  .rave {
+    margin: .5em;
+  }
+
+  .rave:nth-child(2) {
+    margin-top: 2em;
+  }
+  .rave:nth-child(3) {
+    margin-top: 4em;
+  }
 }
 
 /*  
