@@ -23,8 +23,8 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Links
 
-[Project Demo](Demo.Url)
-[Github Repo](github.repo)
+[Project Demo](https://ablueblaze.github.io/FM-004-social-proof-setion/)
+[Github Repo](https://github.com/ablueblaze/FM-004-social-proof-setion)
 
 ### Current/Continued Development
 
@@ -32,6 +32,8 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - Do a better job of utilizing css grid.
   - Definitely implement Grid for the staggering design.
     The staggard design is currently done with margins.
+
+  - Implement changes based on the feed back from Frontend Mentor
 
 
 ## My Process
