@@ -69,5 +69,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 ### Blaze Scott
 
 <blaze@fyxwing.com>
+
 [Github](https://github.com/ablueblaze)
+
 [linkedin](https://www.linkedin.com/in/blaze-scott-3672b891/)
