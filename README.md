@@ -13,7 +13,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [What I Learned](#what-i-learned)
 - [Author](#author)
 
----
 
 ## Overview
 
@@ -34,7 +33,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - Definitely implement Grid for the staggering design.
     The staggard design is currently done with margins.
 
----
 
 ## My Process
 
@@ -62,7 +60,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 - That CSS-Grid is super cool, and I need to spend some time getting better aquatinted with it.
 - That checking the transition in all sizes it imperative if you want the project to have a good level of polish. 
 
---- 
 
 ## Author
 
